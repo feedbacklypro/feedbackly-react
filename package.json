@@ -1,15 +1,17 @@
 {
-  "name": "@feedbackly/react",
+  "name": "feedbackly-react",
   "version": "1.0.0",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsup"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "keywords": [
+    "feedbackly"
+  ],
+  "author": "Aashish Upadhyay <boysmall300@gmail.com>",
+  "license": "MIT",
+  "description": "Feedbackly react component widget",
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.2",
     "@radix-ui/react-label": "^2.1.0",
