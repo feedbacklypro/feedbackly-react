@@ -1,0 +1,41 @@
+'use strict';
+
+var c = require('react');
+var r = require('@radix-ui/react-dialog');
+var lucideReact = require('lucide-react');
+var clsx = require('clsx');
+var tailwindMerge = require('tailwind-merge');
+var jsxRuntime = require('react/jsx-runtime');
+var reactSlot = require('@radix-ui/react-slot');
+var classVarianceAuthority = require('class-variance-authority');
+var x = require('@radix-ui/react-label');
+
+function _interopNamespace(e) {
+	if (e && e.__esModule) return e;
+	var n = Object.create(null);
+	if (e) {
+		Object.keys(e).forEach(function (k) {
+			if (k !== 'default') {
+				var d = Object.getOwnPropertyDescriptor(e, k);
+				Object.defineProperty(n, k, d.get ? d : {
+					enumerable: true,
+					get: function () { return e[k]; }
+				});
+			}
+		});
+	}
+	n.default = e;
+	return Object.freeze(n);
+}
+
+var c__namespace = /*#__PURE__*/_interopNamespace(c);
+var r__namespace = /*#__PURE__*/_interopNamespace(r);
+var x__namespace = /*#__PURE__*/_interopNamespace(x);
+
+function o(...t){return tailwindMerge.twMerge(clsx.clsx(t))}var R=r__namespace.Root,D=r__namespace.Trigger,A=r__namespace.Portal;var P=c__namespace.forwardRef(({className:t,...e},a)=>jsxRuntime.jsx(r__namespace.Overlay,{ref:a,className:o("fixed inset-0 z-50 bg-black/10 backdrop-blur-sm data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0",t),...e}));P.displayName=r__namespace.Overlay.displayName;var m=c__namespace.forwardRef(({className:t,children:e,...a},l)=>jsxRuntime.jsxs(A,{children:[jsxRuntime.jsx(P,{}),jsxRuntime.jsxs(r__namespace.Content,{ref:l,className:o("fixed left-[50%] top-[50%] z-50 grid w-full max-w-lg translate-x-[-50%] translate-y-[-50%] gap-4 border bg-background p-6 shadow-lg duration-200 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%] sm:rounded-lg",t),...a,children:[e,jsxRuntime.jsxs(r__namespace.Close,{className:"absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground",children:[jsxRuntime.jsx(lucideReact.X,{className:"h-4 w-4"}),jsxRuntime.jsx("span",{className:"sr-only",children:"Close"})]})]})]}));m.displayName=r__namespace.Content.displayName;var f=({className:t,...e})=>jsxRuntime.jsx("div",{className:o("flex flex-col space-y-1.5 text-center sm:text-left",t),...e});f.displayName="DialogHeader";var v=({className:t,...e})=>jsxRuntime.jsx("div",{className:o("flex flex-col-reverse sm:flex-row sm:justify-end sm:space-x-2",t),...e});v.displayName="DialogFooter";var h=c__namespace.forwardRef(({className:t,...e},a)=>jsxRuntime.jsx(r__namespace.Title,{ref:a,className:o("text-lg font-semibold leading-none tracking-tight",t),...e}));h.displayName=r__namespace.Title.displayName;var y=c__namespace.forwardRef(({className:t,...e},a)=>jsxRuntime.jsx(r__namespace.Description,{ref:a,className:o("text-sm text-muted-foreground",t),...e}));y.displayName=r__namespace.Description.displayName;var j=classVarianceAuthority.cva("inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",{variants:{variant:{default:"bg-primary text-primary-foreground shadow hover:bg-primary/90",destructive:"bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90",outline:"border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground",secondary:"bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",ghost:"hover:bg-accent hover:text-accent-foreground",link:"text-primary underline-offset-4 hover:underline"},size:{default:"h-9 px-4 py-2",sm:"h-8 rounded-md px-3 text-xs",lg:"h-10 rounded-md px-8",icon:"h-9 w-9"}},defaultVariants:{variant:"default",size:"default"}}),p=c__namespace.forwardRef(({className:t,variant:e,size:a,asChild:l=!1,...u},z)=>jsxRuntime.jsx(l?reactSlot.Slot:"button",{className:o(j({variant:e,size:a,className:t})),ref:z,...u}));p.displayName="Button";var V=classVarianceAuthority.cva("text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"),w=c__namespace.forwardRef(({className:t,...e},a)=>jsxRuntime.jsx(x__namespace.Root,{ref:a,className:o(V(),t),...e}));w.displayName=x__namespace.Root.displayName;var k=c__namespace.forwardRef(({className:t,type:e,...a},l)=>jsxRuntime.jsx("input",{type:e,className:o("flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50",t),ref:l,...a}));k.displayName="Input";var b=c__namespace.forwardRef(({className:t,...e},a)=>jsxRuntime.jsx("textarea",{className:o("flex min-h-[60px] w-full rounded-md border border-input bg-transparent px-3 py-2 text-sm shadow-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50",t),ref:a,...e}));b.displayName="Textarea";var K=[{value:"feature",label:"Feature Request",icon:lucideReact.Lightbulb},{value:"bug",label:"Bug Report",icon:lucideReact.Bug},{value:"feedback",label:"General Feedback",icon:lucideReact.MessageSquare}];function Q({trigger:t}){let[e,a]=c.useState(null),[l,u]=c.useState(!1);return jsxRuntime.jsxs(R,{open:l,onOpenChange:u,children:[jsxRuntime.jsx(D,{asChild:!0,children:t}),jsxRuntime.jsxs(m,{className:"sm:max-w-[425px]",children:[jsxRuntime.jsxs(f,{children:[jsxRuntime.jsx(h,{children:"Feedback"}),jsxRuntime.jsx(y,{children:"Help us improve our product by sharing your thoughts."})]}),e?jsxRuntime.jsxs("form",{onSubmit:s=>{s.preventDefault();let L=new FormData(s.currentTarget);console.log("Form submitted:",Object.fromEntries(L)),u(!1),a(null);},className:"space-y-4",children:[jsxRuntime.jsxs("div",{className:"space-y-2",children:[jsxRuntime.jsx(w,{htmlFor:"title",children:"Title"}),jsxRuntime.jsx(k,{id:"title",name:"title",placeholder:"Brief description",required:!0})]}),jsxRuntime.jsxs("div",{className:"space-y-2",children:[jsxRuntime.jsx(w,{htmlFor:"description",children:"Description"}),jsxRuntime.jsx(b,{id:"description",name:"description",placeholder:"Provide more details...",required:!0})]}),e==="bug"&&jsxRuntime.jsxs("div",{className:"space-y-2",children:[jsxRuntime.jsx(w,{htmlFor:"steps",children:"Steps to Reproduce"}),jsxRuntime.jsx(b,{id:"steps",name:"steps",placeholder:`1. Go to...\r
+2. Click on...\r
+3. Observe that...`})]}),jsxRuntime.jsxs(v,{children:[jsxRuntime.jsx(p,{type:"button",variant:"secondary",onClick:()=>a(null),children:"Back"}),jsxRuntime.jsx(p,{type:"submit",children:"Submit"})]})]}):jsxRuntime.jsxs("div",{className:"py-6",children:[jsxRuntime.jsx("h4",{className:"mb-4 text-sm font-medium",children:"What would you like to report?"}),jsxRuntime.jsx("div",{className:"space-y-2",children:K.map(s=>jsxRuntime.jsxs(p,{variant:"outline",className:"w-full justify-between",onClick:()=>a(s.value),children:[jsxRuntime.jsxs("div",{className:"flex items-center",children:[jsxRuntime.jsx(s.icon,{className:"mr-2 h-4 w-4"}),s.label]}),jsxRuntime.jsx(lucideReact.ChevronRight,{className:"h-4 w-4"})]},s.value))})]})]})]})}
+
+exports.Feedbackly = Q;
+//# sourceMappingURL=index.js.map
+//# sourceMappingURL=index.js.map
